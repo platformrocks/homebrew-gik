@@ -16,7 +16,7 @@ class Gik < Formula
     else
       # macOS x86_64 (Intel)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-x86_64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "56b36d44849c4406485775b0ba9b0d055635c01515281eee6f38c1c3ae65dbdc"
     end
   end
 
