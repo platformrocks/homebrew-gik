@@ -5,8 +5,8 @@
 class Gik < Formula
   desc "Local-first knowledge engine for software projects with RAG, KG, and memory"
   homepage "https://github.com/platformrocks/osr.gik"
-  license "MIT"
   version "0.1.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
@@ -31,10 +31,10 @@ class Gik < Formula
   def install
     # The tarball extracts to gik-<platform>/ containing bin/, models/, and config.default.yaml
     bin.install "bin/gik"
-    
+
     # Install models to libexec (Homebrew convention for auxiliary files)
     libexec.install "models"
-    
+
     # Install default config to pkgshare (accessible but not in main path)
     pkgshare.install "config.default.yaml"
   end
