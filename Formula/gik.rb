@@ -5,14 +5,14 @@
 class Gik < Formula
   desc "Local-first knowledge engine for software projects with RAG, KG, and memory"
   homepage "https://github.com/platformrocks/osr.gik"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       # macOS ARM64 (Apple Silicon)
-      url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-aarch64.tar.gz"
-      sha256 "04535b4e6738a61990269f1a46a1ecc808e534fcec77a6e113ffd87986cd1135"
+      url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.2/gik-macos-aarch64.tar.gz"
+      sha256 "71d89a01912eaf1bafd6c1866ed9a74fc344f642c6297813cd5ff2fc5506880d"
     else
       # macOS x86_64 (Intel)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-x86_64.tar.gz"
@@ -23,8 +23,8 @@ class Gik < Formula
   on_linux do
     if Hardware::CPU.intel?
       # Linux x86_64
-      url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-linux-x86_64.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.2/gik-linux-x86_64.tar.gz"
+      sha256 "bebdaec5962de26029d278485ab171e60bbc34a720c4c1ab712b9e27dba3d1f3"
     end
   end
 
