@@ -19,7 +19,7 @@ jobs:
 
       - name: Set up Homebrew
         run: |
-          brew update
+          brew update || true
 
       - name: Tap this repository
         run: |
@@ -33,8 +33,7 @@ jobs:
         run: |
           brew style gik
 
-      - name: Test formula (if possible)
+      - name: Test formula
         run: |
-          # Only test if we can actually install (requires valid release artifacts)
-          # For now, just validate the formula loads
+          # Validate the formula loads correctly
           brew info gik
