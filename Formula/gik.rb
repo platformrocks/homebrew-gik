@@ -6,23 +6,17 @@ class Gik < Formula
   desc "Local-first knowledge engine for software projects with RAG, KG, and memory"
   homepage "https://github.com/platformrocks/osr.gik"
   license "MIT"
-
-  # TODO: Update version for each release
   version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
       # macOS ARM64 (Apple Silicon)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-aarch64.tar.gz"
-      # TODO: Update sha256 after building release artifact
-      # Generate with: shasum -a 256 gik-macos-aarch64.tar.gz
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "a452ea0a9795408eb4ca9edb8d1212bea9e4398d96b2184470ff5c5a0103f284"
     else
       # macOS x86_64 (Intel)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-x86_64.tar.gz"
-      # TODO: Update sha256 after building release artifact
-      # Generate with: shasum -a 256 gik-macos-x86_64.tar.gz
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
@@ -30,9 +24,7 @@ class Gik < Formula
     if Hardware::CPU.intel?
       # Linux x86_64
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-linux-x86_64.tar.gz"
-      # TODO: Update sha256 after building release artifact
-      # Generate with: shasum -a 256 gik-linux-x86_64.tar.gz
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
