@@ -12,7 +12,7 @@ class Gik < Formula
     if Hardware::CPU.arm?
       # macOS ARM64 (Apple Silicon)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-aarch64.tar.gz"
-      sha256 "a452ea0a9795408eb4ca9edb8d1212bea9e4398d96b2184470ff5c5a0103f284"
+      sha256 "04535b4e6738a61990269f1a46a1ecc808e534fcec77a6e113ffd87986cd1135"
     else
       # macOS x86_64 (Intel)
       url "https://github.com/platformrocks/osr.gik/releases/download/v0.1.0/gik-macos-x86_64.tar.gz"
