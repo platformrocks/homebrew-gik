@@ -1,0 +1,40 @@
+name: Homebrew Tap Audit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  audit:
+    name: Audit Homebrew Formula
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        run: |
+          brew update
+
+      - name: Tap this repository
+        run: |
+          brew tap platformrocks/gik "$GITHUB_WORKSPACE"
+
+      - name: Audit formula
+        run: |
+          brew audit --strict --online gik
+
+      - name: Style check formula
+        run: |
+          brew style gik
+
+      - name: Test formula (if possible)
+        run: |
+          # Only test if we can actually install (requires valid release artifacts)
+          # For now, just validate the formula loads
+          brew info gik

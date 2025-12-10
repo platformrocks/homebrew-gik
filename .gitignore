@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+*.log
+
+# Homebrew
+vendor/
+
+# Python
+__pycache__/
+*.pyc
